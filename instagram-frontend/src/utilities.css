@@ -1,0 +1,61 @@
+/* Flexbox utility classes */
+.flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .flex-end {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .flex-space-between {
+    justify-content: space-between;
+  }
+  
+  .flex-space-around {
+    justify-content: space-around;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  /* Additional utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-style: italic;
+  }
+  
