@@ -5,15 +5,21 @@ import facebook from '../../assets/facebook-logo.png';
 import appstore from '../../assets/appstore-image.jpg';
 import '../../utilities.css';
 import './style.css';
+import Signup from '../Signup/index'
+import SignupForm from '../Signup/index';
+import { Link } from 'react-router-dom';
 
-const [username, setUserName] = useState[""];
-const [password, setPassword] = useState[""];
-
-const loginHandler = ()=> {
-    alert("working!");
-} 
 
 const Login = () => {
+    // const [username, setUserName] = useState[""];
+    // const [password, setPassword] = useState[""];
+
+    // const handleLogin = (event) => {
+    //     alert("working");
+    //     event.preventDefault();
+    // } 
+
+
     return ( 
         <div className='login-container flex-center flex-column'>
             <div className='box-1'>
@@ -24,20 +30,20 @@ const Login = () => {
                     <input 
                     type='text'
                     placeholder='username'
-                    value={username}
-                    onChange={(e) => setUserName(e.target.value)}
+                    // value={username}
+                    // onChange={(e) => setUserName(e.target.value)}
                     /> 
                 </div>
                 <div className='input-box'>
                     <input 
                     type='password'
                     placeholder='Password'
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    // value={password}
+                    // onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
                 <div className='login-button-box'>
-                    <button className='login-button' onClick={loginHandler}>Login</button>
+                    <button className='login-button'>Login</button>
                 </div>
                 <div className='lines-box'>
                     <div className='line-1'></div>
@@ -55,7 +61,7 @@ const Login = () => {
                 </div>
             </div>
             <div className='box-2'>
-                <p>Don't have an account? <span className='sign-up-span'>Sign up</span></p>
+                <p>Don't have an account? <Link to="/signup" className='sign-up-span'>Sign up</Link></p>
             </div>
             <div className='get-app-box'>
                 <p>Get the app.</p>
