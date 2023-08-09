@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logoPlaystore from '../../assets/logo_play_store.png';
 import instaLogoText from '../../assets/instagram-text-logo-83656.png';
 import facebook from '../../assets/facebook-logo.png';
@@ -6,7 +6,12 @@ import appstore from '../../assets/appstore-image.jpg';
 import '../../utilities.css';
 import './style.css';
 
+const [username, setUserName] = useState[""];
+const [password, setPassword] = useState[""];
 
+const loginHandler = ()=> {
+    alert("working!");
+} 
 
 const Login = () => {
     return ( 
@@ -19,16 +24,20 @@ const Login = () => {
                     <input 
                     type='text'
                     placeholder='username'
+                    value={username}
+                    onChange={(e) => setUserName(e.target.value)}
                     /> 
                 </div>
                 <div className='input-box'>
                     <input 
                     type='password'
                     placeholder='Password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     />
                 </div>
                 <div className='login-button-box'>
-                    <button className='login-button'>Login</button>
+                    <button className='login-button' onClick={loginHandler}>Login</button>
                 </div>
                 <div className='lines-box'>
                     <div className='line-1'></div>
