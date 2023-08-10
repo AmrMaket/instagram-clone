@@ -1,18 +1,49 @@
-.menu {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 275px;
+    height: 100%;
+}
+ 
+.menu-logo{
+    width: 100%;
     display: flex;
-    padding-right: 1.5em;
+    align-content: center;
+    padding: 2rem 1.5rem;
 }
-  
-.icon {
-    margin-right: 1.5em;
-    width: 23px;
-    height: 23px;
-  
-    &:hover {
-    cursor: pointer;
-    }
+
+.menu-logo img{
+    width: 130px;
 }
-  
-.profileIcon {
-    margin-top: -3px;
-    }
+
+.menu_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+.menu_icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 12px;
+    font-weight: 600;
+    padding: 6px 5px;
+    border-radius: 8px;
+}
+
+.menu_icon img{
+    width: 35px;
+    height: 35px;
+
+}
+
+.menu_icon:hover{
+    background-color: #F7F7F7;
+}
