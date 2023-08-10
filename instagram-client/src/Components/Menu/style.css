@@ -20,7 +20,7 @@
     width: 130px;
 }
 
-.menu_body{
+.menu-body{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     padding: 1rem;
 }
 
-.menu_icon{
+.menu-icon{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -38,12 +38,12 @@
     border-radius: 8px;
 }
 
-.menu_icon img{
+.menu-icon img{
     width: 35px;
     height: 35px;
 
 }
 
-.menu_icon:hover{
+.menu-icon:hover{
     background-color: #F7F7F7;
 }

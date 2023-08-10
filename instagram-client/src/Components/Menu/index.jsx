@@ -2,11 +2,11 @@ import React from 'react';
 import './style.css';
 import logo from '../../assets/instagram-text-logo-83656.png'
 import home from '../../assets/home.png';
-import search from '../../assets/search.png';
+import search from '../../assets/saerch.png';
 import export1 from '../../assets/export.png';
 import reels from '../../assets/reels.png';
-import messages from '../../assets/messages.png';
-import notifications from '../../assets/notifications.png';
+import messages from '../../assets/messages.jpg';
+import notifications from '../../assets/notifiactions.png';
 import create from '../../assets/create.png';
 import profile from '../../assets/profile1.png';
 import more from '../../assets/more.png';
