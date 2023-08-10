@@ -6,6 +6,9 @@ import { BrowserRouter as Router , Routes, Route} from 'react-router-dom';
 import Menu from './Components/Menu/index';
 import Post from './Components/Post/index';
 import UserCard  from './Components/UserCard';
+import Following  from './Components/Following';
+import Home from './pages/Home';
+
 
 
 
@@ -18,7 +21,9 @@ function App() {
           {/* <Route path='/' element={<Login/>}></Route> */}
           {/* <Route path='/' element={<Menu />}></Route> */}
           {/* <Route path='/' element={<Post />}></Route> */}
-          <Route path='/' element={<UserCard />}></Route>
+          {/* <Route path='/' element={<UserCard />}></Route> */}
+          {/* <Route path='/' element={<Following />}></Route> */}
+          <Route path='/' element={<Home />}></Route>
         </Routes>
       </Router>
     </div>
